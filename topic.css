@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto&display=swap');
 * {
-    font-family: "DM Serif", serif;
+    margin: 0;
+    font-family: 'Roboto',Arial, Helvetica, sans-serif;
     box-sizing: border-box;
     padding: 0;
-    margin: 0;
-    list-style: decimal;
     text-decoration: none;
+    list-style: none;
 }
 .hero {
     width: 100%;
@@ -13,8 +13,7 @@
     background: white;
     color: white;
 }
-nav {
-    position: fixed;
+.nav {
     top: 0;
     left: 0;
     width: 100%;
@@ -35,16 +34,16 @@ nav {
     cursor: pointer;
     margin-left: 30px;
 }
-nav ul {
+.nav ul {
     width: 100%;
     text-align: right;
 }
-nav ul li {
+.nav ul li {
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
 }
-nav ul li a {
+.nav ul li a {
     color: white;
     text-decoration: none;
 }
@@ -108,6 +107,42 @@ nav ul li a {
 .sub-menu-link:hover p {
     font-weight: 600;
 }
+nav {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    padding: 20px 40px;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+.nav-topic {
+    width: 100%;
+    text-align: right;
+    margin: 10px;
+}
+.nav-topic a {
+    color: #0084ff;
+    text-decoration: none;
+    margin-left: 40px;
+    gap: 40px;
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    justify-content: center;
+    align-items: center;
+}
+.content {
+    align-items: center;
+    justify-content: center;
+    margin-top: -500px;
+    background: #8dc8ff;
+    display: flex;
+    gap: 45px;
+}
 .container {
     display: flex;
     padding: 20px;
@@ -117,110 +152,21 @@ nav ul li a {
     align-items: center;
     gap: 40px;
 }
-.about {
-    padding: 0 50px;
-    justify-content: center;
-    align-items: center;
+b {
+    color: red;
 }
-.about img {
-    height: 100%;
-}
-.about-text {
-    width: 80%;
-}
-.about h2 {
+.topic_title {
     display: flex;
-    margin-top: 20px;
-    justify-content: center;
-    align-items: center;
 }
-.about-text p {
-    font-size: 1.3rem;
-    margin-bottom: 12px;
-}
-.body {
+.topichead {
     width: 100%;
 }
-.topic-section {
-    padding: 0 50px;
-    justify-content: center;
-    align-items: center;
+.topichead h1 {
+    text-shadow: 2px 2px #000000;
+    font-size: 4.3rem;
+    color: white;
+    cursor: pointer;
 }
-.topic-section h2 {
-    display: flex;
-    margin-top: 20px;
-    justify-content: center;
-    align-items: center;
-}
-.topic-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.topic-item {
-    height: 150px;
-    width: 525px;
-    margin: 10px;
-    padding: 25px;
-    border-radius: 10px;
-    background-color: #8dc8ff;
-}
-.topic-item img {
-    float: left;
-    height: 100%;
-    margin-right: 15px;
-}
-.topic-item h3 {
-    font-size: 24px;
-    margin-bottom: 8px;
-}
-.exercise-section {
-    padding: 0 50px;
-    justify-content: center;
-    align-items: center;
-}
-.exercise-section h2 {
-    display: flex;
-    margin-top: 20px;
-    justify-content: center;
-    align-items: center;
-}
-.exercise-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.exercise-item {
-    height: 150px;
-    width: 525px;
-    margin: 10px;
-    padding: 25px;
-    border-radius: 10px;
-    background-color: #8dc8ff;
-}
-.exercise-item img {
-    float: left;
-    height: 100%;
-    margin-right: 15px;
-}
-.exercise-item h3 {
-    font-size: 24px;
-    margin-bottom: 8px;
-}
-.nav {
-    background-color:#8dc8ff;
-}
-.foot ul {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 10%;
-    margin-left: 400px;
-    margin-right: 400px;
-    gap: 40px;
-}
-.foot p {
-    margin-left: 500px;
-    margin-right: 500px;
-    margin-top: 10px;
+.first {
+    
 }

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="topic_style.css">
+    <link rel="icon" href="topic.png">
+    <title>Tangent and Secant Segments</title>
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <div class="nav">
+                <img src="logo_icon.png" class="logo">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="topic1.html">Topics</a></li>
+                    <li><a href="exercise1.html">Exercises</a></li>
+                </ul>
+                <img src="user.png" class="user-pic" onclick="toggleMenu()">
+    
+                <div class="sub-menu-wrap" id="subMenu">
+                    <div class="sub-menu">
+                        <div class="user-profile">
+                            <img src="user.png">
+                            <h3>Name</h3>
+                        </div>
+                        <hr>
+                        <a href="#" class="sub-menu-link">
+                            <img src="user.png">
+                            <p>Edit Profile</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class="sub-menu-link">
+                            <img src="settings.png">
+                            <p>Settings</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class="sub-menu-link">
+                            <img src="logout.png">
+                            <p>Logout</p>
+                            <span>></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav2">
+                <nav>
+                    <div class="navigation">
+                        <div class="nav-topic">
+                            <a href="topic1.html">Chords, Arcs</a>
+                            <a href="topic2.html">Arcs and Inscribed</a>
+                            <a href="topic3.html">Tangents and Secants</a>
+                            <a href="topic4.html">Tangent and Secant Segments</a>
+                            <a href="topic5.html">The Distance Formula</a>
+                            <a href="topic6.html">The Equation of a Circle</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="topic_title">
+        <div class="container">
+            <div class="topichead">
+                <h1 class="button">Tangent and Secant Segments</h1>
+            </div>
+        </div>
+    </div>
+    <div class="seventeen">
+        <h2>Theorem on Two Intersecting Chords</h2>
+        <div class="container">
+            <div class="seventeen_text">
+                <p>If two chords of a circle intersect, then the product of the measures of 
+                    the segments of one chord is equal to the product of the measures of the 
+                    segments of the other chord.</p>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="eighteen">
+        <h2>External Secant Segment</h2>
+        <div class="container">
+            <div class="eighteen_text">
+                <p>An external secant segment is the part of a secant segment that is 
+                    outside a circle.</p>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="nineteen">
+        <h2>Theorems on Secant Segments, Tangent Segments, and External Secant Segments</h2>
+        <div class="container">
+            <div class="nineteen_text">
+                <ul>
+                    <li>If two secant segments are drawn to a circle from an exterior point, then 
+                        the product of the lengths of one secant segment and its external secant 
+                        segment is equal to the product of the lengths of the other secant segment 
+                        and its external secant segment.</li>
+                    <li>If a tangent segment and a secant segment are drawn to a circle from an 
+                        exterior point, then the square of the length of the tangent segment is 
+                        equal to the product of the lengths of the secant segment and its external 
+                        secant segment.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <p class="p1">
+        <button><a href="index.html">Home</a></button>
+        <button><a href="topic3.html">Back</a></button>
+        <button><a href="topic5.html">Next</a></button>
+    </p>
+    <script>
+        const button = document.querySelector(".button");
+        button.addEventListener("click", (e) => {
+            e.preventDefault();
+            button.classList.add("animate");
+
+            setTimeout(() => {
+                button.classList.remove("animate");
+            },600)
+        });
+    </script>
+</body>
+</html>
