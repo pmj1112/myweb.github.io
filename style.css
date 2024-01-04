@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 * {
-    margin: 0;
-    font-family: 'Roboto',Arial, Helvetica, sans-serif;
+    font-family: "DM Serif", serif;
     box-sizing: border-box;
     padding: 0;
-    text-decoration: none;
+    margin: 0;
     list-style: none;
+    text-decoration: none;
 }
 .body {
     display: flex;
